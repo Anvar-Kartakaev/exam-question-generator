@@ -1,8 +1,7 @@
-package org.skypro.exam_question_generator.controller;
+package org.skypro.domain.controller;
 
-import org.skypro.exam_question_generator.exam.Question;
-import org.skypro.exam_question_generator.exam.java.JavaQuestionService;
-import org.skypro.exam_question_generator.service.QuestionService;
+import org.skypro.domain.Question;
+import org.skypro.domain.service.QuestionService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,15 +17,14 @@ public class JavaQuestionController {
     }
 
     @GetMapping("/exam/java/add")
-    public String addQuestion(String question, String answer) {
-        service.addQuestion(new JavaQuestionService(question, answer));
-        return "Добавлено!";
+    public Question addQuestion(String question, String answer) {
+        return new Question(question, answer);
     }
 
     @GetMapping("/exam/java/remove")
-    public String removeQuestion(Question question) {
+    public Question removeQuestion(Question question) {
         service.removeQuestion(question);
-        return "Удалено!";
+        return question;
     }
 
     @GetMapping("/exam/java")

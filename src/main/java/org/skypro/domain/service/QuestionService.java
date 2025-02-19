@@ -1,6 +1,6 @@
-package org.skypro.exam_question_generator.service;
+package org.skypro.domain.service;
 
-import org.skypro.exam_question_generator.exam.Question;
+import org.skypro.domain.Question;
 
 import java.util.Set;
 

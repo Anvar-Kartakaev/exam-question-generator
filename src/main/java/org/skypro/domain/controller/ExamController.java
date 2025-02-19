@@ -1,7 +1,7 @@
-package org.skypro.exam_question_generator.controller;
+package org.skypro.domain.controller;
 
-import org.skypro.exam_question_generator.exam.Question;
-import org.skypro.exam_question_generator.service.ExaminerServiceImpl;
+import org.skypro.domain.Question;
+import org.skypro.domain.service.ExaminerServiceImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

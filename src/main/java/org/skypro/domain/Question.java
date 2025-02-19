@@ -1,10 +1,8 @@
-package org.skypro.exam_question_generator.exam;
-
-import org.skypro.exam_question_generator.service.QuestionService;
+package org.skypro.domain;
 
 import java.util.Objects;
 
-public abstract class Question implements QuestionService {
+public class Question {
     private String question;
     private String answer;
 

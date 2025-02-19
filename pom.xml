@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.skypro</groupId>
-	<artifactId>exam-question-generator</artifactId>
+	<artifactId>domain</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Exam question generator</name>
 	<description>A service that generates exam questions</description>

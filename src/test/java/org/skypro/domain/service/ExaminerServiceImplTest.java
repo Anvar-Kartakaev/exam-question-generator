@@ -1,4 +1,4 @@
-package org.skypro.exam_question_generator.service;
+package org.skypro.domain.service;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,11 +1,12 @@
-package org.skypro.exam_question_generator.exam.java;
+package org.skypro.domain.exam.java;
 
-import org.skypro.exam_question_generator.exam.Question;
+import org.skypro.domain.Question;
+import org.skypro.domain.service.QuestionService;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class JavaQuestionService extends Question {
+public class JavaQuestionService extends Question implements QuestionService {
     private final Set<Question> questions;
 
     public JavaQuestionService(String question, String answer) {
@@ -13,17 +14,14 @@ public class JavaQuestionService extends Question {
         questions = new HashSet<>();
     }
 
-    @Override
     public Set<Question> getAllQuestions() {
         return questions;
     }
 
-    @Override
     public void addQuestion(Question question) {
         questions.add(question);
     }
 
-    @Override
     public void removeQuestion(Question question) {
         questions.remove(question);
     }
