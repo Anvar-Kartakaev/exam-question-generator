@@ -1,4 +1,4 @@
-package org.skypro.exam_question_generator;
+package org.skypro.domain;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

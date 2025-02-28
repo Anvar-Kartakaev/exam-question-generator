@@ -1,4 +1,4 @@
-package org.skypro.exam_question_generator;
+package org.skypro.domain;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
